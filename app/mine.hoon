@@ -69,17 +69,17 @@
     `this
   ::
   ++  on-watch
-  |=  =path
-  ~>  %bout.[0 '%mine +on-watch']
-  ^-  (quip card _this)
-  `this
+    |=  =path
+    ~>  %bout.[0 '%mine +on-watch']
+    ^-  (quip card _this)
+    `this
   ::
   ++  on-fail
     ~>  %bout.[0 '%mine +on-fail']
     on-fail:def
   ::
   ++  on-leave
-    ~>  %bout.[0 '%mine +on-init']
+    ~>  %bout.[0 '%mine +on-leave']
     on-leave:def
   --
 |_  [bol=bowl:gall dek=(list card)]
