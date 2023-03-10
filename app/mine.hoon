@@ -27,8 +27,7 @@
   ++  on-init
     ^-  (quip card _this)
     ~>  %bout.[0 '%mine +on-init']
-    =^  cards  state
-      abet:init:eng
+    =^  cards  state  abet:init:eng
     [cards this]
   ::
   ++  on-save
@@ -40,18 +39,17 @@
     |=  ole=vase
     ~>  %bout.[0 '%mine +on-load']
     ^-  (quip card _this)
-    =^  cards  state
-      abet:(load:eng ole)
+    =^  cards  state  abet:(load:eng ole)
     [cards this]
   ::
   ++  on-poke
-    |=  [mar=mark vaz=vase]
+    |=  cag=cage
     ~>  %bout.[0 '%mine +on-poke']
     ^-  (quip card _this)
     `this
   ::
   ++  on-peek
-    |=  =path
+    |=  pat=path
     ~>  %bout.[0 '%mine +on-peek']
     ^-  (unit (unit cage))
     [~ ~]
@@ -69,7 +67,7 @@
     `this
   ::
   ++  on-watch
-    |=  =path
+    |=  pat=path
     ~>  %bout.[0 '%mine +on-watch']
     ^-  (quip card _this)
     `this
