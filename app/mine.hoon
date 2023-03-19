@@ -84,9 +84,7 @@
 +*  dat  .
 ++  emit  |=(=card dat(dek [card dek]))
 ++  emil  |=(lac=(list card) dat(dek (welp lac dek)))
-++  abet
-  ^-  (quip card _state)
-  [(flop dek) state]
+++  abet  ^-((quip card _state) [(flop dek) state])
 ::
 ++  init
   ^+  dat
